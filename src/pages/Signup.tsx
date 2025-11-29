@@ -131,7 +131,7 @@ export default function Signup() {
               <ol className="space-y-2 text-sm">
                 <li className="flex gap-2">
                   <span className="font-bold">1.</span>
-                  <span>Send <strong className="text-primary">KSH 500</strong> via MPESA to:</span>
+                  <span>Send <strong className="text-primary">KSH 200</strong> via MPESA to:</span>
                 </li>
                 <li className="pl-5">
                   <p className="font-bold text-lg">James Sammy</p>
