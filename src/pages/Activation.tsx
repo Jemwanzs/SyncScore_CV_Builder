@@ -86,13 +86,13 @@ export default function Activation() {
           <Card className="w-full max-w-md p-8">
             <h1 className="text-3xl font-bold mb-2">Renew Access</h1>
             <p className="text-muted-foreground mb-6">
-              You have exhausted your downloads. Pay again to continue.
+              Trials Depleted! Pay again to continue!
             </p>
             
             <div className="mb-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
               <h3 className="font-semibold mb-2">Payment Instructions:</h3>
               <ol className="list-decimal list-inside space-y-2 text-sm">
-                <li>Send <strong>KSH 500</strong> to MPESA number: <strong className="text-primary">0798993404</strong></li>
+                <li>Send <strong>KSH 200</strong> to MPESA number: <strong className="text-primary">0798993404</strong></li>
                 <li>Account Name: <strong>James Sammy</strong></li>
                 <li>Call <strong>0798993404</strong> for email activation</li>
                 <li>Enter your MPESA payment code below</li>
@@ -114,7 +114,7 @@ export default function Activation() {
               </div>
               
               <Button type="submit" className="w-full">
-                Submit Payment & Request Activation
+                Submit & Request Activation
               </Button>
               
               <Button 

@@ -212,7 +212,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                CVCraft
+                CV
               </h1>
               <p className="text-sm text-muted-foreground">
                 Professional CV Builder • {user?.email}
@@ -220,8 +220,10 @@ const Index = () => {
             </div>
             <div className="flex gap-2 items-center">
               {user?.isActivated && (
-                <div className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
-                  {user.downloadsRemaining} downloads left
+                <div className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium"
+                title="downloads left"
+                >
+                  {user.downloadsRemaining} trials
                 </div>
               )}
               <Button
@@ -233,17 +235,26 @@ const Index = () => {
                 <Edit3 className="h-4 w-4 mr-2" />
                 Edit
               </Button>
-              <Button
+              {/*<Button
                 variant={view === 'preview' ? 'default' : 'outline'}
                 onClick={() => setView('preview')}
                 size="sm"
               >
                 <Eye className="h-4 w-4 mr-2" />
                 Preview
+              </Button>*/}
+              <Button
+                variant={view === 'preview' ? 'default' : 'outline'}
+                onClick={() => setView('preview')}
+                size="sm"
+                title="Preview" // hover tooltip
+              >
+                <Eye className="h-4 w-4" />
               </Button>
+
               <Button onClick={handleExportPDF} size="sm" disabled={!user?.isActivated || user.downloadsRemaining <= 0}>
                 <Download className="h-4 w-4 mr-2" />
-                Download PDF
+                Print PDF
               </Button>
               <Button onClick={handleLogout} size="sm" variant="ghost">
                 <LogOut className="h-4 w-4" />
@@ -258,7 +269,7 @@ const Index = () => {
           <Alert className="mb-6 border-accent bg-accent/10">
             <AlertCircle className="h-4 w-4 text-accent" />
             <AlertDescription>
-              Your account is pending activation. You can preview CVs but cannot edit or download until activated.{' '}
+              Your email is pending activation. You can preview CVs but cannot edit or download until activated.{' '}
               <Button variant="link" className="p-0 h-auto" onClick={() => navigate('/activation')}>
                 Enter activation code
               </Button>

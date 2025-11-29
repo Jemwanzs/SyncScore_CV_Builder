@@ -82,7 +82,7 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-background to-secondary/10 p-4">
       <Card className="w-full max-w-md p-8">
         <h1 className="text-3xl font-bold mb-2">Welcome Back</h1>
-        <p className="text-muted-foreground mb-6">Login to continue editing your CV</p>
+        <p className="text-muted-foreground mb-6">Build you CV in minutes!</p>
         
         <form onSubmit={handleLogin} className="space-y-4">
           <div className="space-y-2">
@@ -134,6 +134,9 @@ export default function Login() {
             >
               Sign up
             </Button>
+          </p>
+          <p className="text-center text-sm text-muted-foreground">
+            Call +254798993404
           </p>
         </form>
       </Card>

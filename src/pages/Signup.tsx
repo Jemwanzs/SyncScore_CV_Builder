@@ -271,6 +271,9 @@ export default function Signup() {
               Login
             </Button>
           </p>
+          <p className="text-center text-sm text-muted-foreground">
+            Call +254798993404
+          </p>
         </form>
       </Card>
     </div>
