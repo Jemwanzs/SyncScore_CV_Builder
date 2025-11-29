@@ -148,7 +148,7 @@ export default function Activation() {
       <Card className="w-full max-w-md p-8">
         <h1 className="text-3xl font-bold mb-2">Activate Account</h1>
         <p className="text-muted-foreground mb-6">
-          Enter the activation code sent to your email: <strong>{user.email}</strong>
+          Enter the activation code from your Admin: <strong>(James)</strong>
         </p>
         
         {user.mpesaCode && (
