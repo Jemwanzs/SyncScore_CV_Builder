@@ -161,7 +161,7 @@ export default function Signup() {
                 required
               />
               <p className="text-xs text-muted-foreground">
-                Enter the MPESA confirmation code you received from your transaction
+                Enter the MPESA confirmation code
               </p>
             </div>
 
@@ -174,7 +174,7 @@ export default function Signup() {
                 {isSubmitting ? 'Submitting...' : 'Submit Payment Code'}
               </Button>
               <p className="text-xs text-center text-muted-foreground">
-                Your MPESA code will be verified by admin. You'll receive an activation code via email within 24 hours.
+                Your MPESA code will be verified by admin. You'll receive an activation shortly.
               </p>
             </div>
           </div>
