@@ -395,7 +395,7 @@ export default function Signup() {
     return (
       <div
         className="min-h-screen relative flex items-center justify-center overflow-hidden p-4"
-        style={{background: 'linear-gradient(135deg, #fff8dc, #d4af37)'}}// light golden gradient
+        style={{background: 'linear-gradient(135deg, #fff,rgb(99, 98, 97))'}}// light golden gradient
       >
         {cvImages.map((img, i) => (
           <img
