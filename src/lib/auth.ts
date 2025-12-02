@@ -55,7 +55,7 @@ export const signup = async (email: string, password: string, mpesaCode: string)
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`
+        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`
       },
       body: JSON.stringify({
         userEmail: email,
@@ -113,9 +113,11 @@ export const activateUser = (activationCode: string): { success: boolean; error?
     return { success: false, error: 'User not found' };
   }
   
-  // Check against fixed secret code
+  // Check against fixed activation code
   if (activationCode === 'JMS3056!') {
     users[userIndex].isActivated = true;
+    users[userIndex].downloadsRemaining = 3;
+    users[userIndex].activationCode = activationCode;
     saveUsers(users);
     return { success: true };
   }

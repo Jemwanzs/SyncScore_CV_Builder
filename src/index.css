@@ -95,3 +95,27 @@
     font-family: 'Poppins', sans-serif;
   }
 }
+
+@layer utilities {
+  /* Rich text formatting */
+  .rich-text strong {
+    @apply font-bold;
+  }
+  
+  .rich-text em {
+    @apply italic;
+  }
+  
+  .rich-text li {
+    @apply ml-4 mb-1;
+    list-style-type: disc;
+  }
+  
+  .rich-text ul {
+    @apply ml-4 space-y-1;
+  }
+  
+  .rich-text p {
+    @apply mb-2;
+  }
+}

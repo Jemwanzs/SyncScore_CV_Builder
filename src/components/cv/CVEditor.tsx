@@ -1208,6 +1208,15 @@ export const CVEditor = ({ data, onChange }: CVEditorProps) => {
             />
           </div>
           <div>
+            <Label htmlFor="additionalInfo">Additional Info / Roles</Label>
+            <RichTextEditor
+              value={data.personalInfo.additionalInfo || ''}
+              onChange={(value) => updatePersonalInfo('additionalInfo', value)}
+              placeholder="Additional roles, certifications, or short descriptions..."
+              rows={3}
+            />
+          </div>
+          <div>
             <Label htmlFor="summary">Professional Summary</Label>
             <RichTextEditor
               value={data.personalInfo.summary}
