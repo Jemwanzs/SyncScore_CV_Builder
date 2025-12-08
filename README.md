@@ -2,9 +2,10 @@
 Follow these steps:
 
 git init
-git add README.md
 git commit -m "first commit"
 git branch -M main
+git remote add origin <The GITHUB repository here>
+git push origin main
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.

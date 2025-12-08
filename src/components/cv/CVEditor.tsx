@@ -1160,7 +1160,7 @@ export const CVEditor = ({ data, onChange }: CVEditorProps) => {
 
   return (
     <div className="space-y-6">
-      {/* Personal Information */}
+      //Personal Information
       <Card className="p-6">
         <h3 className="text-lg font-semibold mb-4">Personal Information</h3>
         <div className="space-y-4">
@@ -1228,7 +1228,7 @@ export const CVEditor = ({ data, onChange }: CVEditorProps) => {
         </div>
       </Card>
 
-      {/* Sortable Sections */}
+      //Sortable Sections
       <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <SortableContext items={data.sectionOrder} strategy={verticalListSortingStrategy}>
           {data.sectionOrder.map((sectionId, index) => {
@@ -1261,7 +1261,7 @@ export const CVEditor = ({ data, onChange }: CVEditorProps) => {
         </SortableContext>
       </DndContext>
 
-      {/* Add Custom Section Button */}
+      //Add Custom Section Button
       <Card className="p-6">
         <Button onClick={addCustomSection} size="lg" className="w-full">
           <Plus className="h-5 w-5 mr-2" />
